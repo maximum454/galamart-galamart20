@@ -9,6 +9,38 @@
   .element { @include maintain-ratio(16 9); }
 */
 
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-Bold"), url("../fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-Medium"), url("../fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-Light"), url("../fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-Light"), url("../fonts/Montserrat/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 /**
  * Swiper 8.2.6
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -1053,6 +1085,37 @@ html {
   display: none;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #fff;
+  background-image: url("../img/swiper-arrow.svg");
+  background-size: 7px 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  -webkit-box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  margin-top: -14px;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
+}
+
+.swiper-button-prev {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  left: -15px;
+}
+
+.swiper-button-next {
+  right: -15px;
+}
+
 .galamart20-content {
   max-width: 798px;
   margin: 0 auto 70px;
@@ -1100,6 +1163,82 @@ html {
   padding: 13px 50px 14px;
 }
 
+.galamart20-slider {
+  font-family: "Montserrat", sans-serif;
+}
+
+.galamart20-slider__header {
+  text-align: center;
+  margin: 0 0 50px;
+}
+
+.galamart20-slider__title {
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #E85222;
+  margin: 0;
+}
+
+.galamart20-slider__body {
+  max-width: 1370px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.galamart20-slider__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px 30px 10px 10px;
+  background-color: #EC6B29;
+  background-image: url("../img/item-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.galamart20-slider__figure {
+  margin: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40%;
+          flex: 1 0 40%;
+  max-width: 40%;
+  position: relative;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.galamart20-slider__name {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  max-width: 50%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.galamart20-slider .swiper-galamart20 {
+  position: relative;
+}
+
 @media only screen and (max-width: 767px) {
   .d-desktop-none {
     display: block;
@@ -1141,6 +1280,14 @@ html {
     right: 13px;
   }
 
+  .swiper-button-prev {
+    left: -5px;
+  }
+
+  .swiper-button-next {
+    right: -5px;
+  }
+
   .galamart20-content__title {
     font-size: 21px;
     line-height: 27px;
@@ -1154,5 +1301,10 @@ html {
   .galamart20-content__btn {
     font-size: 18px;
     line-height: 31px;
+  }
+
+  .galamart20-slider__title {
+    font-size: 28px;
+    line-height: 34px;
   }
 }

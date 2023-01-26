@@ -1,4 +1,5 @@
 @import "mixin";
+@import "fonts";
 @import "./partials/swiper-bundle";
 
 
@@ -124,6 +125,31 @@ body{
 	}
 }
 
+.swiper-button-prev,
+.swiper-button-next{
+	background-color: #fff;
+	background-image: url("../img/swiper-arrow.svg");
+	background-size: 7px 12px;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 30px;
+	height: 30px;
+	box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+	border-radius: 50%;
+	margin-top: calc(0px - 28px / 2);
+	&:after{
+		display: none;
+	}
+}
+.swiper-button-prev{
+	transform: rotate(-180deg);
+	left: -15px;
+}
+
+.swiper-button-next{
+	right: -15px;
+}
+
 @include r(767){
 	.wrp{
 		background-image: none;
@@ -149,6 +175,14 @@ body{
 			top: 13px;
 			right: 13px;
 		}
+	}
+
+	.swiper-button-prev{
+		left: -5px;
+	}
+
+	.swiper-button-next{
+		right: -5px;
 	}
 }
 
