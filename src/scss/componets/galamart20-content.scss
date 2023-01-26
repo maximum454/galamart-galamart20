@@ -1,0 +1,55 @@
+.galamart20-content{
+	max-width: 798px;
+	margin: 0 auto 70px;
+	&__title{
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 26px;
+		text-align: center;
+		color: #222222;
+		margin-bottom: 23px;
+		span{
+			color: #E85222;
+			font-size: 30px;
+			line-height: 39px;
+			text-transform: uppercase;
+			border-bottom: 1px dashed #E85222;
+		}
+	}
+	p{
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 31px;
+		text-align: center;
+		color: #222222;
+		margin: 0 0 23px;
+	}
+	&__btn{
+
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 31px;
+		text-align: center;
+		color: #FFFFFF;
+		display: block;
+		width: fit-content;
+		margin: 0 auto;
+		background: #A559F8;
+		border-radius: 10px;
+		padding: 13px 50px 14px;
+	}
+	@include r(767){
+		&__title{
+			font-size: 21px;
+			line-height: 27px;
+		}
+		p{
+			font-size: 20px;
+			line-height: 28px;
+		}
+		&__btn{
+			font-size: 18px;
+			line-height: 31px;
+		}
+	}
+}

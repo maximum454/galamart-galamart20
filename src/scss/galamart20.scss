@@ -1,0 +1,161 @@
+@import "mixin";
+@import "./partials/swiper-bundle";
+
+
+* {
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+.header-search.only-mobile{
+	position: relative;
+	margin: 0 -15px;
+	padding: 0 15px;
+	background-color: #ffffff;
+}
+.main{
+	padding-top: 0;
+	overflow: hidden;
+}
+.main>.container{
+	max-width:100%;
+	padding: 0;
+}
+body{
+
+}
+.wrp {
+	position: relative;
+	font-family: "PT Sans";
+	overflow: hidden;
+	background-color: #ffffff;
+	padding-bottom: 0;
+}
+
+.d-none {
+	display: none !important;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.d-block {
+	display: block;
+}
+
+.d-desktop-none {
+	display: none;
+	@include r(767) {
+		display: block;
+	}
+}
+
+.d-mobile-none {
+	display: block;
+	@include r(767) {
+		display: none !important;
+	}
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+.main{
+	padding-bottom: 0;
+}
+
+.remodal{
+	text-align: left;
+	position: relative;
+	background: rgba(7, 7, 15, 0.7);
+	box-shadow: 0 0 23px #4200FF, 0 4px 4px rgba(0, 0, 0, 0.25), inset -5px -5px 81px 11px rgba(255, 0, 245, 0.25), inset 5px 5px 63px 7px rgba(0, 71, 255, 0.5);
+	border-radius: 30px;
+	font-family: "PT Sans";
+	max-width: 834px;
+	padding: 101px 79px 55px;
+	&:before{
+		content: '';
+		top: 0;
+		left: 0;
+		position: absolute;
+		border: 3px solid #00F0FF;
+		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
+		border-radius: 30px;
+		width: calc(100% - 6px);
+		height: calc(100% - 6px);
+		pointer-events: none;
+	}
+	&:after{
+		content: '';
+		top: 0;
+		left: 0;
+		position: absolute;
+		border: 3px solid #875CFF;
+		filter: blur(3.5px);
+		border-radius: 30px;
+		width: calc(100% - 6px);
+		height: calc(100% - 6px);
+		pointer-events: none;
+	}
+	p{
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+		margin: 0 0 24px;
+		color: #63D0FF;
+	}
+	.remodal-close{
+		top: 21px;
+		right: 19px;
+		left: auto;
+		width: 50px;
+		height: 50px;
+		background-image: url("../img/remodal-close.svg");
+		background-size: 100%;
+		background-repeat: no-repeat;
+		&:before{
+			display: none;
+		}
+	}
+}
+
+@include r(767){
+	.wrp{
+		background-image: none;
+	}
+	.remodal-wrapper{
+		padding: 71px 0 0;
+	}
+	.remodal{
+		border-radius: 30px;
+		padding: 85px 23px 40px;
+		&:before{
+			border-radius: 10px;
+		}
+		&:after{
+			border-radius: 10px;
+		}
+		p{
+			font-size: 16px;
+			line-height: 20px;
+			margin: 0 0 22px;
+		}
+		.remodal-close{
+			top: 13px;
+			right: 13px;
+		}
+	}
+}
+
+@import "componets/galamart20-hero";
+@import "componets/galamart20-content";
+@import "componets/galamart20-slider";
+
+
+
+
