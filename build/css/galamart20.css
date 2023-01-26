@@ -1116,6 +1116,50 @@ html {
   right: -15px;
 }
 
+.galamart20-hero {
+  background-image: url("../img/hero-bg.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-bottom: 95px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.galamart20-hero__body {
+  max-width: 1370px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.galamart20-hero__content {
+  max-width: 555px;
+}
+
+.galamart20-hero__title {
+  font-weight: 900;
+  font-size: 75px;
+  line-height: 91px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.galamart20-hero__title span {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.galamart20-hero__subtitle {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 49px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.galamart20-hero__subtitle span {
+  font-weight: 500;
+}
+
 .galamart20-content {
   max-width: 798px;
   margin: 0 auto 70px;

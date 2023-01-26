@@ -1,3 +1,38 @@
 .galamart20-hero{
-	
+	background-image: url("../img/hero-bg.svg");
+	background-position: top center;
+	background-repeat: no-repeat;
+	margin-bottom: 95px;
+	font-family: $font1;
+	&__body{
+		max-width: 1370px;
+		padding: 0 10px;
+		margin: 0 auto;
+	}
+	&__content{
+		max-width: 555px;
+
+	}
+	&__title{
+		font-weight: 900;
+		font-size: 75px;
+		line-height: 91px;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		span{
+			font-weight: 500;
+			font-size: 30px;
+			line-height: 36px;
+		}
+	}
+	&__subtitle{
+		font-weight: 900;
+		font-size: 40px;
+		line-height: 49px;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		span{
+			font-weight: 500;
+		}
+	}
 }
