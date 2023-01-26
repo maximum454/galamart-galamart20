@@ -55,6 +55,12 @@
 
 		position: relative;
 	}
+	.swiper-slide{
+		opacity: .5;
+		&.swiper-slide-visible{
+			opacity: 1;
+		}
+	}
 	@include r(767){
 		&__title{
 			font-size: 28px;

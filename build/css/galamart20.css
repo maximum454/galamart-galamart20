@@ -1239,6 +1239,14 @@ html {
   position: relative;
 }
 
+.galamart20-slider .swiper-slide {
+  opacity: 0.5;
+}
+
+.galamart20-slider .swiper-slide.swiper-slide-visible {
+  opacity: 1;
+}
+
 @media only screen and (max-width: 767px) {
   .d-desktop-none {
     display: block;
