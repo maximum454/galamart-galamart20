@@ -1,28 +1,44 @@
 .galamart20-hero{
+	font-family: $font1;
+	margin-top: -150px;
+	margin-bottom: 45px;
+	position: relative;
 	background-image: url("../img/hero-bg.svg");
 	background-position: top center;
+	background-size: 100% 765px;
 	background-repeat: no-repeat;
-	margin-bottom: 95px;
-	font-family: $font1;
 	&__body{
 		max-width: 1370px;
-		padding: 0 10px;
+		padding: 0 10px 20px;
 		margin: 0 auto;
+		min-height: 816px;
+		display: flex;
+		align-items: center;
+		background-image: url("../img/star.svg");
+		background-position: center top;
+		background-repeat: no-repeat;
+		position: relative;
+		z-index: 10;
 	}
 	&__content{
-		max-width: 555px;
-
+		flex: 1 0 545px;
+		max-width: 545px;
+		height: 100%;
+		margin-top: 67px;
 	}
 	&__title{
 		font-weight: 900;
 		font-size: 75px;
-		line-height: 91px;
+		line-height: 67px;
 		color: #FFFFFF;
 		text-transform: uppercase;
+		margin: 0 0 20px;
 		span{
 			font-weight: 500;
 			font-size: 30px;
 			line-height: 36px;
+			display: block;
+			text-transform: none;
 		}
 	}
 	&__subtitle{
@@ -33,6 +49,109 @@
 		text-transform: uppercase;
 		span{
 			font-weight: 500;
+			text-transform: none;
+		}
+	}
+	&__figure{
+		margin: 0 -100px 0 0;
+		align-self: flex-end;
+		position: relative;
+		left: -22px;
+	}
+	@include r(1919){
+		background-size: auto;
+	}
+	@include r(1439){
+		margin-top: -200px;
+		&__title{
+			font-size: 56px;
+			line-height: 50px;
+			span{
+				font-size: 30px;
+				line-height: 36px;
+			}
+		}
+		&__subtitle{
+			font-size: 40px;
+			line-height: 49px;
+		}
+	}
+	@include r(1023){
+		margin-top: 0;
+		background-position: bottom;
+		&__body{
+			min-height: 416px;
+			background-position: center bottom;
+			background-size: 100%;
+			padding-bottom: 0;
+		}
+		&__content{
+			margin-top: 0;
+			flex: 1 0 300px;
+			max-width: 300px;
+		}
+		&__title{
+			font-size: 40px;
+			line-height: 42px;
+			span{
+				font-size: 22px;
+				line-height: 36px;
+			}
+		}
+		&__subtitle{
+			font-size: 36px;
+			line-height: 42px;
+			span{
+				display: block;
+			}
+		}
+		&__figure{
+			margin: 0;
+			left: 0;
+		}
+	}
+	@include r(767){
+		background-image: url("../img/hero-bg-mobile.png");
+		background-size: cover;
+		margin-bottom: 120px;
+		&__body{
+			flex-wrap: wrap;
+			text-align: center;
+			background-position: top;
+		}
+		&__content{
+			flex: 1 0 100%;
+			padding-top: 50px;
+			margin: 0 auto;
+		}
+		&__title{
+			font-size: 40px;
+			line-height: 42px;
+			margin-bottom: 22px;
+			span{
+				font-size: 16px;
+				line-height: 20px;
+			}
+		}
+		&__subtitle{
+			font-size: 30px;
+			line-height: 36px;
+			span{
+				display: block;
+			}
+		}
+		&__figure{
+			margin:-54px -150px 0;
+			left: 10px;
+			top: 83px;
+		}
+	}
+	@include r(480){
+		&__body{
+			flex-wrap: wrap;
+			text-align: center;
+			background-image: url("../img/star-mobile.png");
+			background-position: center bottom;
 		}
 	}
 }

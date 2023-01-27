@@ -1,17 +1,16 @@
 .galamart20-content{
-	max-width: 798px;
+	max-width: 818px;
 	margin: 0 auto 70px;
+	padding: 0 10px;
 	&__title{
 		font-weight: 700;
-		font-size: 20px;
-		line-height: 26px;
+		font-size: 30px;
+		line-height: 39px;
 		text-align: center;
 		color: #222222;
 		margin-bottom: 23px;
 		span{
 			color: #E85222;
-			font-size: 30px;
-			line-height: 39px;
 			text-transform: uppercase;
 			border-bottom: 1px dashed #E85222;
 		}
@@ -22,7 +21,7 @@
 		line-height: 31px;
 		text-align: center;
 		color: #222222;
-		margin: 0 0 23px;
+		margin: 0 0 19px;
 	}
 	&__btn{
 
