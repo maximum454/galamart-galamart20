@@ -2,4 +2,4 @@
 Скидка 20% на онлайн-заказ
 
 
-https://maximum454.github.io/galamart-cybermonday/build/
+https://maximum454.github.io/galamart-galamart20/build/
