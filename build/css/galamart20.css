@@ -1299,7 +1299,11 @@ html {
   background-position: center;
   background-size: 100%;
   border-radius: 10px;
-  text-decoration: none;
+  text-decoration: none !important;
+}
+
+.galamart20-slider__item:hover {
+  opacity: 0.8;
 }
 
 .galamart20-slider__figure {
