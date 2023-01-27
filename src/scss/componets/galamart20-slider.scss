@@ -16,9 +16,9 @@
 		margin: 0;
 	}
 	&__body{
-		max-width: 1370px;
+		max-width: 1410px;
 		margin: 0 auto;
-		padding: 0 10px;
+		padding: 0 30px;
 	}
 	&__item{
 		display: flex;
@@ -67,6 +67,11 @@
 		&__title{
 			font-size: 28px;
 			line-height: 34px;
+		}
+		&__body{
+			max-width: 1370px;
+			margin: 0 auto;
+			padding: 0 10px;
 		}
 	}
 }

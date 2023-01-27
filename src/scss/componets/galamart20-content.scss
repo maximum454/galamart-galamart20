@@ -36,6 +36,11 @@
 		background: #A559F8;
 		border-radius: 10px;
 		padding: 13px 50px 14px;
+		text-decoration: none!important;
+		&:hover{
+			color: #ffffff!important;
+			opacity: .8;
+		}
 	}
 	@include r(767){
 		&__title{

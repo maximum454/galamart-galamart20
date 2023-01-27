@@ -1244,6 +1244,12 @@ html {
   background: #A559F8;
   border-radius: 10px;
   padding: 13px 50px 14px;
+  text-decoration: none !important;
+}
+
+.galamart20-content__btn:hover {
+  color: #ffffff !important;
+  opacity: 0.8;
 }
 
 .galamart20-slider {
@@ -1268,9 +1274,9 @@ html {
 }
 
 .galamart20-slider__body {
-  max-width: 1370px;
+  max-width: 1410px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 30px;
 }
 
 .galamart20-slider__item {
@@ -1519,6 +1525,12 @@ html {
   .galamart20-slider__title {
     font-size: 28px;
     line-height: 34px;
+  }
+
+  .galamart20-slider__body {
+    max-width: 1370px;
+    margin: 0 auto;
+    padding: 0 10px;
   }
 }
 
