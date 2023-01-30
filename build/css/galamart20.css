@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*
 * @include triangle within a pseudo element and add positioning properties (ie. top, left)
 * $direction: up, down, left, right
@@ -1029,44 +1031,20 @@ html {
   padding-bottom: 0;
 }
 
+.remodal-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .remodal {
   text-align: left;
   position: relative;
-  background: rgba(7, 7, 15, 0.7);
-  -webkit-box-shadow: 0 0 23px #4200FF, 0 4px 4px rgba(0, 0, 0, 0.25), inset -5px -5px 81px 11px rgba(255, 0, 245, 0.25), inset 5px 5px 63px 7px rgba(0, 71, 255, 0.5);
-          box-shadow: 0 0 23px #4200FF, 0 4px 4px rgba(0, 0, 0, 0.25), inset -5px -5px 81px 11px rgba(255, 0, 245, 0.25), inset 5px 5px 63px 7px rgba(0, 71, 255, 0.5);
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   font-family: "PT Sans";
-  max-width: 834px;
-  padding: 101px 79px 55px;
-}
-
-.remodal:before {
-  content: "";
-  top: 0;
-  left: 0;
-  position: absolute;
-  border: 3px solid #00F0FF;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
-  border-radius: 30px;
-  width: calc(100% - 6px);
-  height: calc(100% - 6px);
-  pointer-events: none;
-}
-
-.remodal:after {
-  content: "";
-  top: 0;
-  left: 0;
-  position: absolute;
-  border: 3px solid #875CFF;
-  -webkit-filter: blur(3.5px);
-          filter: blur(3.5px);
-  border-radius: 30px;
-  width: calc(100% - 6px);
-  height: calc(100% - 6px);
-  pointer-events: none;
+  max-width: 660px;
+  padding: 50px 28px 50px 38px;
 }
 
 .remodal p {
@@ -1078,12 +1056,35 @@ html {
   color: #63D0FF;
 }
 
+.remodal ul {
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.remodal ul li {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 31px;
+  color: #222222;
+  padding-left: 17px;
+  margin: 0 0 5px;
+  position: relative;
+}
+
+.remodal ul li:before {
+  content: "•";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .remodal .remodal-close {
-  top: 21px;
-  right: 19px;
+  top: 30px;
+  right: 30px;
   left: auto;
-  width: 50px;
-  height: 50px;
+  width: 16px;
+  height: 16px;
   background-image: url("../img/remodal-close.svg");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -1231,6 +1232,7 @@ html {
 }
 
 .galamart20-content__btn {
+  border: 0;
   font-weight: 400;
   font-size: 20px;
   line-height: 31px;
@@ -1433,27 +1435,30 @@ html {
   }
 
   .remodal {
-    border-radius: 30px;
-    padding: 85px 23px 40px;
+    padding: 39px 13px 40px 18px;
+    border-radius: 20px;
   }
 
-  .remodal:before {
-    border-radius: 10px;
+  .remodal ul {
+    margin: 0 0 20px;
   }
 
-  .remodal:after {
-    border-radius: 10px;
-  }
-
-  .remodal p {
+  .remodal ul li {
     font-size: 16px;
-    line-height: 20px;
-    margin: 0 0 22px;
+    line-height: 21px;
+    padding-left: 17px;
+  }
+
+  .remodal ul li:before {
+    content: "•";
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .remodal .remodal-close {
-    top: 13px;
-    right: 13px;
+    top: 20px;
+    right: 20px;
   }
 
   .swiper-button-prev {

@@ -69,39 +69,18 @@ body{
 	padding-bottom: 0;
 }
 
+.remodal-overlay{
+	background-color: rgba(0,0,0,.3);
+}
 .remodal{
 	text-align: left;
 	position: relative;
-	background: rgba(7, 7, 15, 0.7);
-	box-shadow: 0 0 23px #4200FF, 0 4px 4px rgba(0, 0, 0, 0.25), inset -5px -5px 81px 11px rgba(255, 0, 245, 0.25), inset 5px 5px 63px 7px rgba(0, 71, 255, 0.5);
+	background: #FFFFFF;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 	border-radius: 30px;
 	font-family: "PT Sans";
-	max-width: 834px;
-	padding: 101px 79px 55px;
-	&:before{
-		content: '';
-		top: 0;
-		left: 0;
-		position: absolute;
-		border: 3px solid #00F0FF;
-		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
-		border-radius: 30px;
-		width: calc(100% - 6px);
-		height: calc(100% - 6px);
-		pointer-events: none;
-	}
-	&:after{
-		content: '';
-		top: 0;
-		left: 0;
-		position: absolute;
-		border: 3px solid #875CFF;
-		filter: blur(3.5px);
-		border-radius: 30px;
-		width: calc(100% - 6px);
-		height: calc(100% - 6px);
-		pointer-events: none;
-	}
+	max-width: 660px;
+	padding: 50px 28px 50px 38px;
 	p{
 		font-style: normal;
 		font-weight: 400;
@@ -110,12 +89,32 @@ body{
 		margin: 0 0 24px;
 		color: #63D0FF;
 	}
+	ul{
+		margin: 0 0 20px;
+		padding: 0;
+		list-style: none;
+		li{
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 31px;
+			color: #222222;
+			padding-left: 17px;
+			margin: 0 0 5px;
+			position: relative;
+			&:before{
+				content: '•';
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
 	.remodal-close{
-		top: 21px;
-		right: 19px;
+		top: 30px;
+		right: 30px;
 		left: auto;
-		width: 50px;
-		height: 50px;
+		width: 16px;
+		height: 16px;
 		background-image: url("../img/remodal-close.svg");
 		background-size: 100%;
 		background-repeat: no-repeat;
@@ -158,22 +157,26 @@ body{
 		padding: 71px 0 0;
 	}
 	.remodal{
-		border-radius: 30px;
-		padding: 85px 23px 40px;
-		&:before{
-			border-radius: 10px;
-		}
-		&:after{
-			border-radius: 10px;
-		}
-		p{
-			font-size: 16px;
-			line-height: 20px;
-			margin: 0 0 22px;
+		padding: 39px 13px 40px 18px;
+		border-radius: 20px;
+		ul{
+			margin: 0 0 20px;
+			li{
+
+				font-size: 16px;
+				line-height: 21px;
+				padding-left: 17px;
+				&:before{
+					content: '•';
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+			}
 		}
 		.remodal-close{
-			top: 13px;
-			right: 13px;
+			top: 20px;
+			right: 20px;
 		}
 	}
 
