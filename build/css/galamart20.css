@@ -1311,9 +1311,9 @@ html {
 .galamart20-slider__figure {
   margin: 0;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 40%;
-          flex: 1 0 40%;
-  max-width: 40%;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
+  max-width: 30%;
   position: relative;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -1321,9 +1321,9 @@ html {
 
 .galamart20-slider__name {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
-  max-width: 50%;
+      -ms-flex: 1 0 70%;
+          flex: 1 0 70%;
+  max-width: 70%;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
